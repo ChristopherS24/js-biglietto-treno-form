@@ -1,7 +1,7 @@
 function calcolaPrezzo() {
     // Valori input
-    const km = document.getElementById('km').value;
     const age = document.getElementById('age').value;
+    const km = document.getElementById('km').value;
 
     // Prezzo base
     const prezzoBase = km * 0.21;
@@ -19,5 +19,6 @@ function calcolaPrezzo() {
     
 
     // Stampa il risultato in console
+    document.getElementById('risultato').textContent = `Prezzo: €${prezzoFinale.toFixed(2)}`;
     console.log(`Prezzo del biglietto: €${prezzoFinale.toFixed(2)}`);
 }
